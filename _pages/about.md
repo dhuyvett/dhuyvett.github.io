@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-put something here some day  
+put something here some day soon 
