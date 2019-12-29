@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  "Using xrdp with WSL 2"
+author: David Dhuyvetter
 categories: [Window, Linux]
+excerpt: The Windows Subsystem for Linux is in the midst of a complete overhaul. I've used it in the past for development tooling, and while it had strengths from the start, I always seemed to hit hard limitations that made it more trouble than it was worth.  Initially I used VcXsrv for GUI applications, and while I was able to get some productivity out of the configuration, it was a lot of work to set up and maintain.
 ---
 
 This is part 1 of a 2 part journey.  I'm writing it up here to preserve the details, but this isn't the configuration that ultimately worked for me.  For that, you should see: Using xpra with WSL2 (not written yet)
 
-The [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about) is in the midst of a complete overhaul. I've used it in the past for development tooling, and while it had strengths from the start, I always seemed to hit hard limitations that made it more trouble than it was worth.  Initially I used [VcXsrv](https://sourceforge.net/projects/vcxsrv/) for GUI applications, and while I was able to get some productivity out of the configuration, it was a lot of work to set up and maintain
+The [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about) is in the midst of a complete overhaul. I've used it in the past for development tooling, and while it had strengths from the start, I always seemed to hit hard limitations that made it more trouble than it was worth.  Initially I used [VcXsrv](https://sourceforge.net/projects/vcxsrv/) for GUI applications, and while I was able to get some productivity out of the configuration, it was a lot of work to set up and maintain.
 
 With [WSL 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index), a real linux kernel is now running in a lightweight VM instead of WSL mapping system calls to the Windows kernel. Docker server, the ultimate "ain't never gonna work" under WSL 1, now works under WSL 2. But this new approach actually makes running GUI applications harder.  The network configuration is more complex. The IP address, and even the subnet used by WSL changes periodically. Setting up a secure X server in Windows would require SSH tunneling to WSL, or a [service](https://github.com/shayne/go-wsl2-host) to update the Windows hosts file whenever WSL changes its address, or custom Windows Firewall configuration or ... .
 
