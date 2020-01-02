@@ -2,11 +2,11 @@
 layout: post
 title:  "Using xrdp with WSL 2"
 author: David Dhuyvetter
-categories: [Window, Linux]
+tags: [Windows, Linux, WSL]
 excerpt: The Windows Subsystem for Linux is in the midst of a complete overhaul. I've used it in the past for development tooling, and while it had strengths from the start, I always seemed to hit hard limitations that made it more trouble than it was worth.  Initially I used VcXsrv for GUI applications, and while I was able to get some productivity out of the configuration, it was a lot of work to set up and maintain.
 ---
 
-This is part 1 of a 2 part journey.  I'm writing it up here to preserve the details, but this isn't the configuration that ultimately worked for me.  For that, you should see: Using xpra with WSL2 (not written yet)
+This is part 1 of a 2 part journey.  I'm writing it up here to preserve the details, but this isn't the configuration that ultimately worked for me.  For that, you should see: [Using xpra with WSL2](2020-01-01-Using-xpra-with-WSL-2.md).
 
 The [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about) is in the midst of a complete overhaul. I've used it in the past for development tooling, and while it had strengths from the start, I always seemed to hit hard limitations that made it more trouble than it was worth.  Initially I used [VcXsrv](https://sourceforge.net/projects/vcxsrv/) for GUI applications, and while I was able to get some productivity out of the configuration, it was a lot of work to set up and maintain.
 
